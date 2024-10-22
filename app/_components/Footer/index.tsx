@@ -1,4 +1,5 @@
 import styles from "./index.module.scss";
+import Link from "next/link";
 
 const navItems = [
   { href: "/news", label: "ニュース" },
@@ -13,7 +14,7 @@ export default function Footer() {
         <ul className={styles.items}>
           {navItems.map((item, index) => (
             <li key={index} className={styles.item}>
-              <a href={item.href}>{item.label}</a>
+              <Link href={item.href}>{item.label}</Link>
             </li>
           ))}
         </ul>
