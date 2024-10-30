@@ -13,6 +13,8 @@ type Props = {
   };
 };
 
+export const revalidate = 0;
+
 export default async function Page({ params, searchParams }: Props) {
   console.log("Slug:", params.slug);
   console.log("Draft Key:", searchParams.dk);
