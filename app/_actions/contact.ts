@@ -85,7 +85,7 @@ export async function createContactData(_prevState: any, formData: FormData) {
     return {
       status: "error",
       message: `システムエラーが発生しました: ${
-        e.message || "お問い合わせに失敗しました"
+        e.message || "お問い合わせに失敗しました。"
       }`,
     };
   }
